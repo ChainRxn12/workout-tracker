@@ -21,8 +21,14 @@
   },
   "homepage": "https://github.com/ChainRxn12/workout-tracker#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.2",
+    "mongodb": "^4.1.1",
     "mongoose": "^6.0.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "util": "^0.12.4"
   }
 }
