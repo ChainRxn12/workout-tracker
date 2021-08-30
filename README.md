@@ -29,13 +29,17 @@
 ## Usage
 
 ```md
-*  A daily workout application where a user can create and and track workouts.  The application can log multiple exercises in a workout on a given day.  The application will be able to keep track of the name, type, weight, sets, reps, and duration of the exercise.  If the exercise is cardio (running, swimming, etc.) the application is able to track the distance traveled.
+A daily workout application where a user can create and and track workouts.
+The application can log multiple exercises in a workout on a given day.  
+The application will be able to keep track of the name, type, weight, sets, reps, 
+and duration of the exercise.  If the exercise is cardio (running, swimming, etc.) 
+the application is able to track the distance traveled.
 ```
   
 ## Contributing
 
 ```md 
-*  If you want to contribute, please contact the author or create a new pull request.
+If you want to contribute, please contact the author or create a new pull request.
 ```  
 ## Tests
   
