@@ -29,7 +29,7 @@
 ## Usage
 
 ```md
-A daily workout application where a user can create and and track workouts.
+A daily workout application where a user can create and track workouts.
 The application can log multiple exercises in a workout on a given day.  
 The application will be able to keep track of the name, type, weight, sets, reps, 
 and duration of the exercise.  If the exercise is cardio (running, swimming, etc.) 
@@ -52,13 +52,13 @@ If you want to contribute, please contact the author or create a new pull reques
 
 ## Screenshot
 
-![schooly_screenshot](https://user-images.githubusercontent.com/78969397/129258402-86eab714-9643-4b22-8444-3f07f2188299.png)
+<!-- ![schooly_screenshot](https://user-images.githubusercontent.com/78969397/129258402-86eab714-9643-4b22-8444-3f07f2188299.png) -->
 
 
 
 ## Heroku-App
 
-[schooly](https://fierce-retreat-28707.herokuapp.com/)
+<!-- [schooly](https://fierce-retreat-28707.herokuapp.com/) -->
 
 
 ## Authors
