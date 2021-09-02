@@ -5,6 +5,9 @@ const compression = require("compression");
 
 const PORT = process.env.PORT || 3001
 
+// dotenv local config for mongo Atlas DB
+require("dotenv").config();
+
 const app = express();
 
 app.use(logger("dev"));
