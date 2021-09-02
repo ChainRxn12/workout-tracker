@@ -46,7 +46,7 @@ function populateChart(data) {
   let pie = document.querySelector("#canvas3").getContext("2d");
   let pie2 = document.querySelector("#canvas4").getContext("2d");
 
-  let lineChart = new Chart(line, {
+  let line = new Chart(line, {
     type: "line",
     data: {
       labels: [
@@ -94,7 +94,7 @@ function populateChart(data) {
     },
   });
 
-  let barChart = new Chart(bar, {
+  let bar = new Chart(bar, {
     type: "bar",
     data: {
       labels: [
@@ -147,7 +147,7 @@ function populateChart(data) {
     },
   });
 
-  let pieChart = new Chart(pie, {
+  let pie = new Chart(pie, {
     type: "pie",
     data: {
       labels: workouts,
@@ -167,7 +167,7 @@ function populateChart(data) {
     },
   });
 
-  let donutChart = new Chart(pie2, {
+  let pie2 = new Chart(pie2, {
     type: "doughnut",
     data: {
       labels: workouts,
