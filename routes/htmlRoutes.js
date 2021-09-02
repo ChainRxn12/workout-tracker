@@ -1,14 +1,17 @@
 var path = require("path");
 
-module.exports = function(app) {
+module.exports = (app) => {
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
 
-  // Exercise Page
-  app.get("/exercise", function(req, res) {
+  // html to display the exercise route for entering exercises
+  app.get("/exercise", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
-  
-  //Stats Page
-  app.get("/stats", function(req, res) {
+
+  // html to display the stats route
+  app.get("/stats", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
   });
 };
