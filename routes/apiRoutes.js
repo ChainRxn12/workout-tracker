@@ -1,8 +1,9 @@
 const db = require("../models");
+const Router = require("express").Router();
 
-module.exports = function (app) {
+
   // Get all workouts
-  app.get("/api/workouts", (req, res) => {
+  Router.get("/api/workouts", (req, res) => {
     db.Workout.find({})
       .then((workout) => {
         res.json(workout);
@@ -11,7 +12,7 @@ module.exports = function (app) {
   });
 
   // Creates a new exercise in workout
-  app.post("/api/workouts", (req, res) => {
+  Router.post("/api/workouts", (req, res) => {
     db.Workout.create({})
       .then((newWorkout) => {
         res.json(newWorkout);
@@ -20,7 +21,7 @@ module.exports = function (app) {
   });
 
   // Update workout
-  app.put("/api/workouts/:id", ({ params, body }, res) => {
+  Router.put("/api/workouts/:id", ({ params, body }, res) => {
     db.Workout.findByIdAndUpdate(
       { _id: params.id },
       // mongo command to push exercise into the workout
@@ -34,7 +35,7 @@ module.exports = function (app) {
   });
 
   // find all workouts to display in workout dashboard
-  app.get("/api/workouts/range", (req, res) => {
+  Router.get("/api/workouts/range", (req, res) => {
     db.Workout.find({})
       //return as json
       .then((workout) => {
@@ -44,9 +45,10 @@ module.exports = function (app) {
   });
 
   // update existing workout
-  app.post("/api/workouts/range", (req, res) => {
+  Router.post("/api/workouts/range", (req, res) => {
     db.Workout.create({})
       .then((data) => res.json(data))
       .catch((err) => res.json(err));
   });
-};
+
+  module.exports = Router;
