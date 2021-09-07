@@ -24,7 +24,7 @@
   
 ## Installation
   
-* 
+* Please clone repository and install dependencies OR follow the deployed application link below.
   
 ## Usage
 
@@ -43,7 +43,7 @@ If you want to contribute, please contact the author or create a new pull reques
 ```  
 ## Tests
   
-*  
+*  N/A
   
 ## License
   
