@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 mongoose.connect('mongodb://localhost/fitnessDb', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
   // useCreateIndex: true,
   // useFindAndModify: false
 });
